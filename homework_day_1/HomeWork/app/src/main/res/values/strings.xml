@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="text_user">User Name</string>
+    <string name="text_password">Password</string>
+    <string name="text_input1">input name</string>
+    <string name="text_input2">input password</string>
+    <string name="text_remember">Remember Me</string>
+    <string name="text_star">star now</string>
+    <string name="text_please">please star</string>
+    <string name="app_confirm">Login</string>
+    <string name="pic_name">cat</string>
+</resources>
