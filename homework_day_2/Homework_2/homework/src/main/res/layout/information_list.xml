@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#161823">
+
+        <TextView
+            android:id="@+id/tv_with_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="monospace"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="消息" />
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/header"
+        android:weightSum="2"
+        android:id="@+id/layout1"
+        
+        tools:background="@color/colorBackground">
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width='40dp'
+            android:layout_height='40dp'
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_notice_fans"/>
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width='40dp'
+            android:layout_height='40dp'
+            android:layout_marginLeft="51.5dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_notice_like" />
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width='40dp'
+            android:layout_height='40dp'
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_notice_people" />
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width='40dp'
+            android:layout_height='40dp'
+            android:layout_marginLeft="51.5dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_notice_comment" />
+        
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout1"
+        android:weightSum="2"
+        android:id="@+id/layout2"
+
+        tools:background="@color/colorBackground">
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="20dp"
+            android:textSize="16sp"
+            android:layout_marginLeft="36dp"
+            android:text="粉丝"
+            android:textColor="#ffffff"
+            />
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="20dp"
+            android:textSize="16sp"
+            android:layout_marginLeft="64dp"
+            android:text="赞"
+            android:textColor="#ffffff"
+            />
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="20dp"
+            android:textSize="16sp"
+            android:layout_marginLeft="48dp"
+            android:text="\@我的"
+            android:textColor="#ffffff"
+            />
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="20dp"
+            android:textSize="16sp"
+            android:layout_marginLeft="50dp"
+            android:text="评论"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:background="#FFF"
+
+        android:layout_below="@+id/layout2"
+        android:layout_above="@+id/tail"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+        
+        
+    <ImageView
+            android:id="@+id/tail"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="49.5dp"
+            android:src="@drawable/tab_2_x"
+        />
+
+
+
+</RelativeLayout>
