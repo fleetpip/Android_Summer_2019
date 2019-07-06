@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <Button
+        android:id="@+id/buttonChange"
+        android:layout_width="108dp"
+        android:layout_height="57dp"
+
+        android:layout_alignStart="@+id/surfaceView"
+        android:layout_alignLeft="@+id/surfaceView"
+        android:layout_alignTop="@+id/surfaceView"
+        android:layout_alignEnd="@+id/surfaceView"
+        android:layout_alignRight="@+id/surfaceView"
+        android:layout_alignBottom="@+id/surfaceView"
+        android:layout_marginStart="139dp"
+        android:layout_marginLeft="139dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginRight="165dp"
+        android:layout_marginBottom="202dp"
+        android:alpha="0.2"
+        android:text="Change" />
+    <LinearLayout
+        android:layout_below="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play" />
+
+        <Button
+            android:id="@+id/buttonPause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pause" />
+    </LinearLayout>
+</RelativeLayout>
