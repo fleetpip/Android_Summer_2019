@@ -236,7 +236,7 @@ public class Solution2C2Activity extends AppCompatActivity {
             public void onResponse(Call<PostVideoResponse> call, Response<PostVideoResponse> response) {
 
                 Toast.makeText(Solution2C2Activity.this,"Post Successfully",Toast.LENGTH_LONG).show();
-                mBtn.setText("@string/select_an_image");
+                mBtn.setText(R.string.select_an_image);
                 mBtn.setEnabled(true);
             }
 
@@ -244,7 +244,7 @@ public class Solution2C2Activity extends AppCompatActivity {
             public void onFailure(Call<PostVideoResponse> call, Throwable t) {
                 Log.d(TAG, "onFailure: ");
                 Toast.makeText(Solution2C2Activity.this,"Post Not Successfully",Toast.LENGTH_LONG).show();
-                mBtn.setText("@string/select_an_image");
+                mBtn.setText(R.string.select_an_image);
                 mBtn.setEnabled(true);
             }
         });
